@@ -1,0 +1,16 @@
+- title: Pages
+  links:
+    - name: Home
+      link: /
+    - name: Portfolio
+      link: /portfolio/
+    - name: About
+      link: /about/
+    - name: Contact
+      link: /contact/
+- title: Social
+  links:
+    - name: Github
+      link: 'https://github.com/techengineer3d'
+      social_icon: Github
+      new_window: true
