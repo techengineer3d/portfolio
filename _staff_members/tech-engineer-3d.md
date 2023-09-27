@@ -11,13 +11,10 @@ I like finding efficient ways to optimize work loads, reduce development time an
 
 I am also very passionate about real-time 3D graphics and have a strong interest in Dev-Ops, AI and Machine Learning.
 
-
-&nbsp;
-
 I studied game development programming at [DigiPen in Vancouver, British Columbia](https://www.digipen.edu/about/our-history){: target="_blank"}. 
 Afterwards, I decided to move overseas to pursue a career as a game developer, continue my studies in game development and gain international experience abroad.
 
-&nbsp;
+Presently I am working as an Engineer in the Advanced Technology Division at [Square Enix](/portfolio/clients/square-enix/){: target="_blank"}
 
 Recently, I was working as a Technical Artist on the Playstation 4 title "[Project Awakening : Arise" at Cygames.](/portfolio/clients/cygames/){: target="_blank"}
 
