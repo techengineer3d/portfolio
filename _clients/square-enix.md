@@ -41,11 +41,9 @@ Later, I created a Maya tool for mixing facial motions from different motion cat
 
 ##### &nbsp;
 
-#### Facial Animation Debug Tools For Luminous
+#### Facial Animation Debug Tools For Luminous Engine
 
-As a part of a facial animation project,
-
-I created debugging tools for testing character facial rig controls.
+As a part of a facial animation project, I created debugging tools for testing character facial rig controls in the Luminous Editor.
 
 I created a panel that displayed a list of the rig controls, which could be text filtered in real time by control name, or by the control type.
 
