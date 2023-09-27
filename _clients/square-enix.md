@@ -55,13 +55,13 @@ I also created a tool for testing the playback of the facial motions in-editor.
 
 &nbsp;
 
-#### Facial Animation Tools For Unreal Engine 5
+#### Facial Animation Debug Tools For Unreal Engine 5
 
 Later, it was decided to port the tools from Luminous Engine to Unreal Engine 5.
 
-So, I ended up porting all of the above mentioned Facial Animation tools to Unreal.
+So, I ended up porting all of the above mentioned facial animation debug tools to Unreal Editor.
 
-I also added support for saving and restoring the current user session and settings, so that the user could continue working where they last left off.
+I also added support for saving and restoring the current debug settings, so that the user could continue working where they last left off.
 
 &nbsp;
 
