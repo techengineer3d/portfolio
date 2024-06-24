@@ -2,7 +2,7 @@
 name: Square Enix
 subtitle: Advanced Technology Division
 start_date: 2021-06-01
-end_date: Present
+end_date: 2024-06-30
 external_url: 'https://www.square-enix.com/'
 image_path: /images/clients/square_enix/square_enix_logo_black_thumb.png
 ---
@@ -13,7 +13,7 @@ image_path: /images/clients/square_enix/square_enix_logo_black_thumb.png
 
 ## Employment Overview
 
-From June 2021 up to present, I have been working as an **Engineer** in the [Advanced Technology Division](http://www.jp.square-enix.com/tech/#) at [Square Enix](https://www.square-enix.com/) in Shinjuku, Tokyo.
+From June 2021 to June 2024, I worked as an **Engineer** in the [Advanced Technology Division](http://www.jp.square-enix.com/tech/#) at [Square Enix](https://www.square-enix.com/) in Shinjuku, Tokyo.
 
 &nbsp;
 
