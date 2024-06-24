@@ -14,9 +14,9 @@ I am also very passionate about real-time 3D graphics and have a strong interest
 I studied game development programming at [DigiPen in Vancouver, British Columbia](https://www.digipen.edu/about/our-history){: target="_blank"}. 
 Afterwards, I decided to move overseas to pursue a career as a game developer, continue my studies in game development and gain international experience abroad.
 
-Presently I am working as an Engineer in the Advanced Technology Division at [Square Enix](/portfolio/clients/square-enix/){: target="_blank"}
+Recently I was working as an Engineer in the Advanced Technology Division at [Square Enix](/portfolio/clients/square-enix/){: target="_blank"}
 
-Recently, I was working as a Technical Artist on the Playstation 4 title "[Project Awakening : Arise" at Cygames.](/portfolio/clients/cygames/){: target="_blank"}
+Prior to that, I worked as a Technical Artist on the Playstation 4 title "[Project Awakening : Arise" at Cygames.](/portfolio/clients/cygames/){: target="_blank"}
 
 I have also worked on console and mobile game titles including [Final Fantasy Grandmasters](/portfolio/clients/crooz/){: target="_blank"}, [Final Fantasy Agito](/portfolio/clients/tayutau/){: target="_blank"} and [Demon's Souls](/portfolio/clients/from-software/){: target="_blank"}.
 
