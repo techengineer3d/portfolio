@@ -1,6 +1,6 @@
 #google_translate_element {
   position: fixed;
-  top: 25px;
+  top: 35px;
   right: 10px;
   z-index: 9999;
   background: #fff;
@@ -11,4 +11,11 @@
 }
 .goog-te-gadget img {
   display: none; /* Hide Google branding flag icon */
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+body {
+    top: 0px !important;
 }
