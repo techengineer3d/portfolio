@@ -8,6 +8,11 @@
 		{% seo %}
 		{% feed_meta %}
 
+		<!-- putting this 1 here was the only way I could display the Google Translate widget without my website menu disappearing -->
+		1
+		<!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/jekyll_google_translate.css" type="text/css"> --> <!--covered by section.hero-->
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/google_translate.css"> <!-- Google Translate button css, but website header menu disappears! -->
+
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
@@ -29,6 +34,10 @@
 				<!--<h1 class="company-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" alt="techengineer3d" width="250"></a></h1>-->
 				<h1 class="company-name"><a href="{{ site.baseurl }}/"></a></h1>
 				{% include navigation.html %}
+			</div>
+
+			<div class="container">
+			{% include google_translate.html %}
 			</div>
 		</header>
 		{{ content }}
