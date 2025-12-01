@@ -16,7 +16,7 @@ Advanced Technology Department <br/>
 Tokyo, Japan <br/>
 
 ## Overview
-At [Square Enix Japan](https://www.square-enix.com/), I worked as a Tools & Workflow engineer in the [Advanced Technology Division](http://www.jp.square-enix.com/tech/#), developing in-house Maya tools as well as game engine editor tools for Luminous Engine and Unreal Engine 5.
+At [Square Enix Japan](https://www.square-enix.com/), I worked as a Tools & Workflow engineer in the [Advanced Technology Division](http://www.jp.square-enix.com/tech/#), developing in-house Maya tools as well as game engine editor tools for [Luminous Engine](https://www.luminous-productions.com/engine/) and [Unreal Engine](https://www.unrealengine.com/) 5.
 
 ### Maya Facial Animation Exporter
 I was assigned to work on the company’s internal facial animation tools and programming libraries. <br/>

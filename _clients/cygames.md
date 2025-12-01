@@ -79,7 +79,7 @@ Some examples: <br/>
 
 #### Source Code Analysis Tools
 
-[Coverity](https://www.coverity.com), [SonarLint](https://www.sonarlint.org/), [SonarQube](https://www.sonarqube.org/),
+[Coverity](https://www.blackduck.com/static-analysis-tools-sast/coverity.html), [SonarLint](https://www.sonarlint.org/), [SonarQube](https://www.sonarqube.org/),
 
 #### Coding Style Tools
 

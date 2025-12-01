@@ -47,7 +47,7 @@ The extended FBX exporter was written in C++ using the Autodesk FBX SDK.
 |                                   |                                                                                                                     |
 
 ### Asset Setup Tools For Unity 5
-Initially my game development team was setting up Unity game assets by hand was taking time. <br/>
+Initially the game development team was setting up Unity game assets by hand, and it was taking a lot of time. <br/>
 To improve the art and game asset pipeline, I created various tools to automatically handle import of art assets and automatically setup game assets, such as animation clips, animation controllers, models, material shaders and prefabs.  <br/>
 I also created an automated asset import batching tool to handle large processing large volumes of FBX assets.  <br/>
 The tools helped to drastically cut the amount of time spent on setting up the game assets in Unity. <br/>
