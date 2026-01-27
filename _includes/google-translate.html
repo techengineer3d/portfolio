@@ -4,8 +4,9 @@
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'ar,de,el,en,es,fi,fr,hi,is,it,ja,ko,nl,no,pt,pt-PT,sv,zh-CN,zh-TW', // Customize this list
+        includedLanguages: 'ar,de,el,en,es,fi,fr,hi,is,it,ja,ko,nl,no,pt,pt-PT,sv,zh-CN,zh-TW', //supported languages
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        //layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT,
         autoDisplay: false
     }, 'google_translate_element');
   }

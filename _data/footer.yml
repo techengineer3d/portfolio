@@ -2,8 +2,10 @@
   links:
     - name: Home
       link: /
-    - name: Portfolio
-      link: /portfolio/
+    - name: Clients
+      link: /clients/
+    - name: Graphics
+      link: /graphics/
     - name: About
       link: /about/
     - name: Contact

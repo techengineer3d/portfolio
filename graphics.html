@@ -1,0 +1,28 @@
+---
+title: R&D
+heading: Graphics Work
+subtitle: Realtime Shading & Rendering
+---
+
+<section class="diagonal patterned">
+	<div class="container">
+	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_graphics/" class="btn"><strong>&#9998;</strong> Manage Graphics</a></p>
+		<ul class="image-grid">
+			{% assign graphics_list = site.graphics | sort: 'start_date' | reverse %}
+			{% for graphic in graphics_list %}
+				<li>
+					<a href="{{ site.baseurl }}{{ graphic.url }}">
+						<img src="{% include relative-src.html src=graphic.image_path %}" alt="{{ person.name }}">
+						<div class="details">
+							<div class="name">{{ graphic.name }}</div>
+							<div class="position">{{ graphic.subtitle }}</div>
+							<div class="time">{{ graphic.start_date }} ~ {{ graphic.end_date }}</div>
+						</div>
+					</a>
+				</li>
+			{% endfor %}
+			<li class="filler"></li>
+			<li class="filler"></li>
+		</ul>
+	</div>
+</section>
