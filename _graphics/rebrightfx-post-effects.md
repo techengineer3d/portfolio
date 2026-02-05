@@ -57,10 +57,10 @@ Check back soon for details!
 
 RebrightFX for Reshade works best on Windows 11 PC’s.
 
-Graphics Card: NVidia RTX 3050, 8GB Video Memory or better
-System Memory: 8GB or more
-CPU: Intel Core i7 10700 or better
-Monitor: Display resolution of 1080p or higher
+- Graphics Card: NVidia RTX 3050, 8GB Video Memory or better
+- System Memory: 8GB or more
+- CPU: Intel Core i7 10700 or better
+- Monitor: Display resolution of 1080p or higher
 
 ## Limitations
 
