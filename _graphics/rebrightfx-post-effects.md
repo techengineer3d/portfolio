@@ -68,7 +68,7 @@ RebrightFX post effects can be used with Reshade to visually enhance games, film
 However the post effect enhancements will look better on some games and media than others, depending on how the media was visually produced.
 RebrightFX for Reshade UHD series presets were designed for quality over performance and does incur a performance hit.
 Optimal game play frame rates are not guaranteed, and performance will vary according to individual PC machine specs and 3D graphics settings.
-Reshade itself requires GPU acceleration to work and may not work with all GPU accelerated video players.
+In the case of watching RebrightFX enhanced video, Reshade itself requires GPU acceleration to work and may not work with all GPU accelerated video players.
 
 ## Performance Testing
 
