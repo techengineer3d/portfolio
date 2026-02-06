@@ -85,17 +85,25 @@ Unless specified, RebrightFX was not used in the production of any games, films,
 Images are best viewed at full size to see fine details.
 Right click image and open in new tab to preview it full size. 
 
+## Dev
+
+Template for clickable images
+
+<a href="link_destination_url" target="_blank">
+  <img src="image_source_url" width="600" height="300" alt="Full image link">
+</a>
+
 ### 3DCG
 
-Original                   |  RebrightFX Enhanced
-:-------------------------:|:-------------------------:
-![](/portfolio/images/graphics/rebrightfx/3dcg/3dcg-game-chara-01-01-original.jpg){: width="600" height="300"}  |  ![](/portfolio/images/graphics/rebrightfx/3dcg/3dcg-game-chara-01-02-rebrightfx.jpg){: width="600" height="300"}
+| Original | RebrightFX Enhanced |
+|---|---|
+| <a href="/portfolio/images/graphics/rebrightfx/3dcg/3dcg-techsmith-01-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/3dcg/3dcg-techsmith-01-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/3dcg/3dcg-techsmith-01-02-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/3dcg/3dcg-techsmith-01-02-rebrightfx.jpg" width="600" height="300"></a> |
 
 ---
 
 ### Games
 
-#### Dragon Quest VII Reimagined
+#### Square Enix: Dragon Quest VII Reimagined
 
 Original                   |  RebrightFX Enhanced
 :-------------------------:|:-------------------------:
@@ -107,11 +115,47 @@ Original                   |  RebrightFX Enhanced
 ![](/portfolio/images/graphics/rebrightfx/games/sqex-dq-7-reimagined/dq7r_demo-08-01-original.jpg){: width="600" height="300"}  |  ![](/portfolio/images/graphics/rebrightfx/games/sqex-dq-7-reimagined/dq7r_demo-08-02-rebrightfx.jpg){: width="600" height="300"}
 ![](/portfolio/images/graphics/rebrightfx/games/sqex-dq-7-reimagined/dq7r_demo-10-01-original.jpg){: width="600" height="300"}  |  ![](/portfolio/images/graphics/rebrightfx/games/sqex-dq-7-reimagined/dq7r_demo-10-02-rebrightfx.jpg){: width="600" height="300"}
 
+#### Mihoyo: Genshin Impact
+
+| Original | RebrightFX Enhanced |
+|---|---|
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-02-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-02-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-02-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-02-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-03-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-03-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-03-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-03-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-05-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-05-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-05-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-05-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-06-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-06-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-06-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-06-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-07-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-07-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-07-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-07-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-08-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-08-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-08-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-08-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-09-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-09-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-09-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-09-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-10-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-10-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-10-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-10-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-11-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-11-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-11-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-11-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-12-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-12-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-12-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-12-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-13-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-13-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-13-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-13-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-14-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-14-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-14-03-rebrightfx-luma-ambient-cinematic.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/games/mihoyo-genshin-impact/genshin-14-03-rebrightfx-luma-ambient-cinematic.jpg" width="600" height="300"></a>
+
 ---
 
 ### Movies
 
-#### Aliens
+#### Marvel: Thor Ragnarok
+
+| Original | RebrightFX Enhanced |
+|---|---|
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-02-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-02-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-02-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-02-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-05-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-05-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-05-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-05-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-09-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-09-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-09-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-09-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-12-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-12-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-12-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-12-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-13-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-13-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-13-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-13-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-14-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-14-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-14-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-14-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-16-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-16-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-16-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-16-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-06-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-06-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-06-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-06-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-04-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-04-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-04-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-04-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-18-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-18-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-18-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-18-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-19-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-19-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-19-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-19-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-20-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-20-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-20-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-20-03-rebrightfx.jpg" width="600" height="300"></a>
+| <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-17-01-original.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-17-01-original.jpg" width="600" height="300"></a> | <a href="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-17-03-rebrightfx.jpg" target="_blank"><img src="/portfolio/images/graphics/rebrightfx/films/thor-ragnarok/thor-ragnarok-17-03-rebrightfx.jpg" width="600" height="300"></a>
+
+
+#### 20th Century Fox: Aliens
 
 Original                   |  RebrightFX Enhanced
 :-------------------------:|:-------------------------:
