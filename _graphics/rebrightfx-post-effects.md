@@ -82,16 +82,8 @@ In general, higher resolution settings will yield higher quality images but lowe
 ** Disclaimer: original and RebrightFX enhanced images are used under 'Fair Use' for demonstration purposes only.
 Unless specified, RebrightFX was not used in the production of any games, films, shows or artwork.
 
-Images are best viewed at full size to see fine details.
-Right click image and open in new tab to preview it full size. 
-
-## Dev
-
-Template for clickable images
-
-<a href="link_destination_url" target="_blank">
-  <img src="image_source_url" width="600" height="300" alt="Full image link">
-</a>
+Images are best viewed at full size to see fine details. <br/>
+(Right) Click image to open it in a new tab and preview it full size. <br/>
 
 ### 3DCG
 
