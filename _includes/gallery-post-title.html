@@ -1,0 +1,8 @@
+<p class="gallery-post-details">
+	{% for category in include.gallery-post.categories %}
+		<span class="gallery-filter">
+			<a href="{{ site.baseurl }}/category/{{ category | slugify }}/">{{ category | capitalize }}</a>
+		</span>
+	{% endfor %}
+	<span class="gallery-post-date">{{ include.gallery-post.date | date: "%B %d, %Y" }}</span>
+</p>

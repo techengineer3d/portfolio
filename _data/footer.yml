@@ -6,6 +6,8 @@
       link: /clients/
     - name: Graphics
       link: /graphics/
+    - name: Gallery
+      link: /gallery/    
     - name: About
       link: /about/
     - name: Contact

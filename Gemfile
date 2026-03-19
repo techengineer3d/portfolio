@@ -89,3 +89,9 @@ gem 'csv'
 group :jekyll_plugins do
   gem 'jekyll_google_translate'
 end
+
+# image magick bindings for ruby
+#gem 'rmagick', '~> 3.0' 
+# won't install
+ gem 'jekyll-imagemagick'
+ 

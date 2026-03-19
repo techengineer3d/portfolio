@@ -14,7 +14,7 @@ GEM
       mutex_m
       securerandom (>= 0.3)
       tzinfo (~> 2.0)
-    addressable (2.8.8)
+    addressable (2.8.9)
       public_suffix (>= 2.0.2, < 8.0)
     base64 (0.3.0)
     benchmark (0.5.0)
@@ -45,13 +45,14 @@ GEM
     eventmachine (1.2.7-x64-mingw32)
     execjs (2.10.0)
     facets (3.1.0)
-    faraday (2.14.0)
+    faraday (2.14.1)
       faraday-net_http (>= 2.0, < 3.5)
       json
       logger
     faraday-net_http (3.4.2)
       net-http (~> 0.5)
     ffi (1.17.3)
+    ffi (1.17.3-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
     github-pages (228)
@@ -148,6 +149,8 @@ GEM
     jekyll-github-metadata (2.13.0)
       jekyll (>= 3.4, < 5.0)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-imagemagick (1.4.0)
+      jekyll (>= 3.4)
     jekyll-include-cache (0.2.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-mentions (1.6.0)
@@ -234,7 +237,7 @@ GEM
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
-    json (2.18.0)
+    json (2.18.1)
     key-value-parser (0.0.2)
     kramdown (2.3.2)
       rexml
@@ -253,7 +256,8 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (6.0.1)
+    minitest (6.0.2)
+      drb (~> 2.0)
       prism (~> 1.5)
     mutex_m (0.3.0)
     net-http (0.9.1)
@@ -266,7 +270,7 @@ GEM
       sawyer (~> 0.9)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    prism (1.8.0)
+    prism (1.9.0)
     pry (0.16.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -323,6 +327,7 @@ DEPENDENCIES
   jekyll-feed (= 0.15.1)
   jekyll-gist (= 1.5.0)
   jekyll-github-metadata (= 2.13.0)
+  jekyll-imagemagick
   jekyll-include-cache (= 0.2.1)
   jekyll-mentions (= 1.6.0)
   jekyll-optional-front-matter (= 0.3.2)
@@ -365,4 +370,4 @@ DEPENDENCIES
   webrick
 
 BUNDLED WITH
-  4.0.4
+  4.0.7

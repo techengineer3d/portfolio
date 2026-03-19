@@ -29,14 +29,18 @@ collections:
     output: true
   graphics:
     output: true
+  galleries:
+    output: true
 
 paginate: 10
 paginate_path: "/blog/:num/"
 permalink: pretty
 
 jekyll-archives:
-  enabled:
-    - "categories"
+  posts:
+    enabled: ["categories"]
+    permalinks:
+      categories: "/blog/:type/:name/"
 
 plugins:
   - "jekyll-feed"
@@ -73,10 +77,19 @@ defaults:
       path: ""
       type: "graphics"
     values:
-      layout: "graphics"
+      layout: "graphic"
       _options:
         image_path:
           width: 2000
+          height: 2000
+  - scope:
+      path: ""
+      type: "galleries"
+    values:
+      layout: "gallery"
+      _options:
+        image_path:
+          width: 960
           height: 2000
   - scope:
       path: ""
@@ -96,6 +109,10 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+  - scope:
+      path: "images"
+    values:
+      image: true
 
 # -----------
 # CloudCannon
@@ -110,3 +127,16 @@ social_icons:
   - YouTube
   - RSS
   - Github
+
+  # ------------
+  # Site Options
+
+  # Lazy loading images
+#   If you enable lazy loading, all images will add the loading="lazy" attribute.
+#   This will make your site load faster, but it may not be supported in all browsers.
+#   You can also set loading="" to other values for specific images to override the default behavior.
+#   Options: "auto", "eager", "lazy"
+#   See https://web.dev/browser-level-image-lazy-loading/ for more information.
+lazy_loading_images: true # enables lazy loading of images (recommended)
+enable_darkmode: true # enables switching between light/dark modes
+enable_masonry: true # enables automatic project cards arrangement

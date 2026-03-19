@@ -1,0 +1,109 @@
+---
+layout: default
+---
+{% assign galleries = site.pages | where: "path", "galleries.html" | first %}
+
+<section class="hero diagonal">
+	<div class="container">
+		{% if galleries.heading %}
+		<h2><a href="{{ site.baseurl }}/galleries/">{{ galleries.heading }}</a> / {{ page.title }}</h2>
+		{% endif %}
+		{% if page.subtitle %}
+			<p class="subtext">{{ page.subtitle }}</p>
+		{% endif %}
+		
+	</div>
+</section>
+
+<section class="diagonal">
+	<div class="container">
+		<!-- <p><img src="{% include relative-src.html src=page.image_path %}" class="screenshot"></p> -->
+
+		<!--
+		<div>
+			{{ content }}
+		</div>
+		 -->
+
+		{% assign root = page.gallery_root %}
+		{% assign before_folder = page.before_folder %}
+		{% assign after_folder = page.after_folder %}
+		{% assign images_folder = page.images_folder %}
+		{% assign thumbnails_folder = page.thumbnails_folder %}
+		{% assign publish_date_folder = page.publish_date_folder %}
+
+		{% assign name = page.gallery.name %}
+		{% assign category = page.gallery.category %}
+		{% assign album =  page.gallery.album %}
+		{% assign tracks = page.gallery.tracks %}
+		{% assign cover_image = page.gallery.cover_image %}
+		{% assign banner_image = page.gallery.banner_image %}
+		{% assign feature_image = page.gallery.feature_image %}
+		{% assign separate_galleries = page.gallery.enable_separate_galleries %}
+
+		{% assign banner_path = "{{site.baseurl}}{{root}}{{name}}{{category}}{{album}}{{banner_folder}}{{after_folder}}{{image_size_folder}}{{publish_date_folder}}{{banner_image}}" %}
+
+		![](banner_path)
+
+		## Shadow of the Tomb Raider
+
+		### Before / After Compare
+
+		<div>
+		<img-comparison-slider id=myImgComparisonSlider>
+		<figure slot="first" class="before">
+			<img width="100%" src="/portfolio/images/galleries/rebrightfx/games/eidos-sottr/00-title-screen/original-images/1440p/sottr-00-title-screen-menuless-01-01-original.jpg">
+			<figcaption>Original</figcaption>
+		</figure>
+		<figure slot="second" class="after">
+			<img width="100%" src="/portfolio/images/galleries/rebrightfx/games/eidos-sottr/00-title-screen/rebrightfx-images/1440p/2026-03-13/sottr-title-screen-menuless-01-02-RC1-2026-03-13-RebrightFX-UHD-Dynamic-Luma-04-Chroma-Vibrant .jpg">
+			<figcaption>RebrightFX</figcaption>
+		</figure>
+		</img-comparison-slider>
+		</div>
+
+		<br/>
+
+		### Image Slider
+
+		Images are best viewed full screen to see the ultra fine detail.
+		Click on the image preview window to switch to the full screen image viewer.
+
+		{% assign folder1 = site.static_files | where_exp: "item", "item.path contains 'images/galleries/rebrightfx/games/eidos-sottr/07-peru-jungle/original-images/1440p'" %}
+		{% assign folder2 = site.static_files | where_exp: "item", "item.path contains 'images/galleries/rebrightfx/games/eidos-sottr/07-peru-jungle/rebrightfx-images/1440p/2026-03-13'" %}
+
+		{% assign all_files = folder1 | concat: folder2 %}
+
+	    <!--concatenate all tracks here if single gallery -->
+
+		{% assign sorted_files = all_files | sort: 'name' %}
+		
+		<div class="f-carousel" id="fancyCarousel2">
+		<div class="f-carousel__viewport">
+		{% for file in sorted_files %}
+		{% if file.extname == '.jpg' %}
+			<div
+			class="f-carousel__slide"
+			data-fancybox="ff7"
+			data-src="{{ site.baseurl }}/{{ file.path }}"
+			data-thumb-src="{{ site.baseurl }}/{{ file.path }}"
+			>
+			<img
+				data-lazy-src="{{ site.baseurl }}/{{ file.path }}"
+				width="1920"
+				height="1080"
+				alt="Original"
+			/>
+			</div>
+		{% endif %}
+		{% endfor %}
+		</div>
+		</div>
+
+		<br/>
+
+		{% if page.external_url %}
+			<p><a href="{{ page.external_url }}">View {{ page.title }} &rarr;</a></p>
+		{% endif %}
+	</div>
+</section>
