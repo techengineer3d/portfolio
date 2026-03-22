@@ -18,66 +18,239 @@ layout: default
 <section class="diagonal">
 	<div class="container">
 		<!-- <p><img src="{% include relative-src.html src=page.image_path %}" class="screenshot"></p> -->
-
-		<!--
+        
 		<div>
-			{{ content }}
-		</div>
-		 -->
+		<!-- IMAGE BANNER -->
 
-		{% assign root = page.gallery_root %}
-		{% assign before_folder = page.before_folder %}
-		{% assign after_folder = page.after_folder %}
-		{% assign images_folder = page.images_folder %}
-		{% assign thumbnails_folder = page.thumbnails_folder %}
-		{% assign publish_date_folder = page.publish_date_folder %}
+		{% assign gallery_folder = page.gallery.root_folder %}
+		{% assign gallery_folder = gallery_folder | append: page.gallery.category_folder %}
+		{% assign gallery_folder = gallery_folder | append: page.gallery.album_folder %}
+		
+		{% comment %}{% assign gallery_folder = page.gallery.main_folder %}{% endcomment %}
 
-		{% assign name = page.gallery.name %}
-		{% assign category = page.gallery.category %}
-		{% assign album =  page.gallery.album %}
-		{% assign tracks = page.gallery.tracks %}
-		{% assign cover_image = page.gallery.cover_image %}
-		{% assign banner_image = page.gallery.banner_image %}
-		{% assign feature_image = page.gallery.feature_image %}
-		{% assign separate_galleries = page.gallery.enable_separate_galleries %}
+		{% assign before_folder = page.gallery.before_folder %}
+		{% assign after_folder = page.gallery.after_folder %}
+		{% assign image_size_folder = page.gallery.image_size_folder %}
+		{% assign release_date_folder = page.gallery.release_date_folder %}
 
-		{% assign banner_path = "{{site.baseurl}}{{root}}{{name}}{{category}}{{album}}{{banner_folder}}{{after_folder}}{{image_size_folder}}{{publish_date_folder}}{{banner_image}}" %}
+		{% comment %}
+		debug:<br/>
+		gallery_folder = {{gallery_folder}}<br/>
+		before_folder = {{page.gallery.before_folder}}<br/>
+		after_folder = {{page.gallery.after_folder}}<br/>
+		image_size_folder = {{page.gallery.image_size_folder}}<br/>
+		release_date_folder = {{page.gallery.release_date_folder}}<br/>
+		banner_folder = {{page.gallery.banner_folder}}<br/>
+		cover_folder = {{page.gallery.cover_folder}}<br/>
+		feature_folder = {{page.gallery.feature_folder}}<br/>
+		{% endcomment %}
 
-		![](banner_path)
+		{% comment %}
+		BANNER IMAGE: display banner image if available
+		{% endcomment %}
 
-		## Shadow of the Tomb Raider
+		{% assign banner_folder = page.gallery.banner_folder %}
 
-		### Before / After Compare
+		{% assign before_folder_path = gallery_folder %}
+		{% assign before_folder_path = before_folder_path | append: banner_folder %}
+		{% assign before_folder_path = before_folder_path | append: before_folder %}
+		{% assign before_folder_path = before_folder_path | append: image_size_folder %}
+
+		{% assign after_folder_path = gallery_folder %}
+		{% assign after_folder_path = after_folder_path | append: banner_folder %}
+		{% assign after_folder_path = after_folder_path | append: after_folder %}
+		{% assign after_folder_path = after_folder_path | append: image_size_folder %}
+		{% assign after_folder_path = after_folder_path | append: release_date_folder %}
+
+		{% assign before_images = site.static_files | where_exp: "item", "item.path contains before_folder_path" %}
+		{% assign after_images = site.static_files | where_exp: "item", "item.path contains after_folder_path" %}   
+
+		{% comment %}
+		debug<br/>
+		before_folder_path = {{before_folder_path}}<br/>
+		after_folder_path = {{after_folder_path}}<br/>
+		{% for file in before_images %}
+		found before image: {{file.path}}<br/>
+		{% endfor%}
+		{% for file in after_images %}
+		found after image: {{file.path}}<br/>
+		{% endfor%}
+		{% endcomment %}
+
+		{% if after_images != null or after_images != ''%}
+		{% assign banner_image_path = after_images.first.path %}
+		{% endif %}
+
+		{% if banner_image_path == null or banner_image_path == '' %}
+		{% if before_images != null or before_images != '' %}
+		{% assign banner_image_path = before_images.first.path %}
+		{% endif %}
+		{% endif %}
+
+		{% if banner_image_path %}
+		<p><img src="{{site.baseurl}}{{banner_image_path}}" alt="banner"></p>
+		{% endif %}
+
+		<br/>
+		<br/>
+
+		<!-- PAGE/GALLERY TITLE -->
+		 {% assign gallery_title = page.title %}
+		<h2>{{ gallery_title }}</h2>
+
+		<!-- FEATURE IMAGE COMPARISON SLIDER -->
+
+		{% assign feature_folder = page.gallery.feature_folder %}
+
+		{% assign before_folder_path = gallery_folder %}
+		{% assign before_folder_path = before_folder_path | append: feature_folder %}
+		{% assign before_folder_path = before_folder_path | append: before_folder %}
+		{% assign before_folder_path = before_folder_path | append: image_size_folder %}
+
+		{% assign after_folder_path = gallery_folder %}
+		{% assign after_folder_path = after_folder_path | append: feature_folder %}
+		{% assign after_folder_path = after_folder_path | append: after_folder %}
+		{% assign after_folder_path = after_folder_path | append: image_size_folder %}
+		{% assign after_folder_path = after_folder_path | append: release_date_folder %}
+
+		{% assign before_images = site.static_files | where_exp: "item", "item.path contains before_folder_path" %}
+		{% assign after_images = site.static_files | where_exp: "item", "item.path contains after_folder_path" %}   
+
+		{% comment %}
+		debug<br/>
+		before_folder_path = {{before_folder_path}}<br/>
+		after_folder_path = {{after_folder_path}}<br/>
+		{% for file in before_images %}
+		found before image: {{file.path}}<br/>
+		{% endfor%}
+		{% for file in after_images %}
+		found after image: {{file.path}}<br/>
+		{% endfor%}
+		{% endcomment %}
+		
+
+		{% if before_images != null or before_images != '' %}
+		{% assign feature_image_before = before_images.first.path %}
+		{% endif %}
+
+		{% if after_images != null or after_images != ''%}
+		{% assign feature_image_after = after_images.first.path %}
+		{% endif %}
+
+		{% if feature_image_before and feature_image_after %}
+		<h3 id="feature-image">Feature Image</h3>
 
 		<div>
 		<img-comparison-slider id=myImgComparisonSlider>
 		<figure slot="first" class="before">
-			<img width="100%" src="/portfolio/images/galleries/rebrightfx/games/eidos-sottr/00-title-screen/original-images/1440p/sottr-00-title-screen-menuless-01-01-original.jpg">
+			<img width="100%" src="{{site.baseurl}}{{feature_image_before}}">
 			<figcaption>Original</figcaption>
 		</figure>
 		<figure slot="second" class="after">
-			<img width="100%" src="/portfolio/images/galleries/rebrightfx/games/eidos-sottr/00-title-screen/rebrightfx-images/1440p/2026-03-13/sottr-title-screen-menuless-01-02-RC1-2026-03-13-RebrightFX-UHD-Dynamic-Luma-04-Chroma-Vibrant .jpg">
+			<img width="100%" src="{{site.baseurl}}{{feature_image_after}}">
 			<figcaption>RebrightFX</figcaption>
 		</figure>
 		</img-comparison-slider>
 		</div>
 
 		<br/>
+		<br/>
+		<br/>
 
-		### Image Slider
+		{% endif %} <!--if before and after feature images -->
 
-		Images are best viewed full screen to see the ultra fine detail.
-		Click on the image preview window to switch to the full screen image viewer.
+		<!-- GALLERY CAROUSEL -->
 
-		{% assign folder1 = site.static_files | where_exp: "item", "item.path contains 'images/galleries/rebrightfx/games/eidos-sottr/07-peru-jungle/original-images/1440p'" %}
-		{% assign folder2 = site.static_files | where_exp: "item", "item.path contains 'images/galleries/rebrightfx/games/eidos-sottr/07-peru-jungle/rebrightfx-images/1440p/2026-03-13'" %}
+		<!-- automatic gallery image file loader -->
+		{% assign beforeFolder = page.gallery.before_folder %}
+		{% assign afterFolder = page.gallery.after_folder %}
+		{% assign image_size_folder = page.gallery.image_size_folder %}
+		{% assign release_date_folder = page.gallery.release_date_folder %}
+		{% assign subFolderList = page.gallery.subfolders %}
 
-		{% assign all_files = folder1 | concat: folder2 %}
+		{% assign __empty_array = '' | split: ',' %}
+		{% assign all_files = __empty_array %}
 
-	    <!--concatenate all tracks here if single gallery -->
+		{% assign all_images = site.static_files | where: "image", true %}
+
+		{% comment %}
+		GALLERY MAIN FOLDER: load gallery images from main folder
+		{% endcomment%}
+
+		{% assign before_folder_path = gallery_folder %}
+		{% assign before_folder_path = before_folder_path | append: beforeFolder %}
+		{% assign before_folder_path = before_folder_path | append: image_size_folder %}
+
+		{% assign after_folder_path = gallery_folder %}
+		{% assign after_folder_path = after_folder_path | append: afterFolder %}
+		{% assign after_folder_path = after_folder_path | append: image_size_folder %}
+		{% assign after_folder_path = after_folder_path | append: release_date_folder %}
+
+		{% assign beforeImages = site.static_files | where_exp: "item", "item.path contains before_folder_path" %}
+		{% assign afterImages = site.static_files | where_exp: "item", "item.path contains after_folder_path" %}    
+		{% assign all_files = all_files | concat: beforeImages %}
+		{% assign all_files = all_files | concat: afterImages %}
+
+		{% comment %}
+		GALLERY SUBFOLDERS: load gallery images from specified subfolders
+		{% endcomment%}
+
+		{% for subfolder in subFolderList %}
+
+		{% assign before_folder_path = gallery_folder %}
+		{% assign before_folder_path = before_folder_path | append: subfolder %}
+		{% assign before_folder_path = before_folder_path | append: beforeFolder %}
+		{% assign before_folder_path = before_folder_path | append: image_size_folder %}
+
+		{% assign after_folder_path = gallery_folder %}
+		{% assign after_folder_path = after_folder_path | append: subfolder %}
+		{% assign after_folder_path = after_folder_path | append: afterFolder %}
+		{% assign after_folder_path = after_folder_path | append: image_size_folder %}
+		{% assign after_folder_path = after_folder_path | append: release_date_folder %}
+		
+		{% comment %}
+		{% assign beforeImages = __empty_array %}
+		{% assign afterImages = __empty_array %}
+		start image loop search<br/>
+		{% for image in all_images %}
+			{% if image.path contains before_folder_path %}
+			{% assign beforeImages = beforeImages | push: image %}
+			{% endif %}
+			{% if image.path contains after_folder_path %}
+			{% assign afterImages = afterImages | push: image %}
+			{% endif %}
+		{% endfor %}
+		end image loop search<br/>
+		{% endcomment %}
+		
+		{% assign beforeImages = site.static_files | where_exp: "item", "item.path contains before_folder_path" %}
+		{% assign afterImages = site.static_files | where_exp: "item", "item.path contains after_folder_path" %}
+			
+		{% assign all_files = all_files | concat: beforeImages %}
+		{% assign all_files = all_files | concat: afterImages %}
+
+		{% comment %}
+		debug:<br/>
+		before_folder_path = {{ before_folder_path }}<br/>
+		after_folder_path = {{ after_folder_path }}<br/>
+		{% endcomment %}
+		
+		{% endfor %} <!--for subfolder in subfolderlist-->
+
+		{% if all_files %}
+
+		<h3 id="gallery-slider">Gallery Slider</h3>
+
+		<p>
+		<span class="font-weight-bold">
+		Images are best viewed full screen in order to clearly see the enhanced ultra high definition details.<br>
+		Click on the image preview window below to switch to the larger image viewer.<br>
+		Then use the toolbar to toggle full screen mode, hide the thumbnails, and start a slideshow.<br>
+		</span>
+		</p>
 
 		{% assign sorted_files = all_files | sort: 'name' %}
-		
+
 		<div class="f-carousel" id="fancyCarousel2">
 		<div class="f-carousel__viewport">
 		{% for file in sorted_files %}
@@ -90,8 +263,8 @@ layout: default
 			>
 			<img
 				data-lazy-src="{{ site.baseurl }}/{{ file.path }}"
-				width="1920"
-				height="1080"
+				width="100%"
+				height="100%"
 				alt="Original"
 			/>
 			</div>
@@ -101,7 +274,13 @@ layout: default
 		</div>
 
 		<br/>
+		<br/>
+		<br/>
 
+		{% endif %} <!--if all_files-->
+
+		</div>	
+			
 		{% if page.external_url %}
 			<p><a href="{{ page.external_url }}">View {{ page.title }} &rarr;</a></p>
 		{% endif %}
