@@ -1,0 +1,113 @@
+---
+title: Galleries
+heading: Galleries
+heading-large: Gallery
+heading-medium: RebrightFX
+heading-small: 
+subtitle: Samples of my latest work to enhance the image quality of digital media and entertainment
+nav: true
+nav_order: 3
+display_categories: [games, films, shows, anime, art, cinematography, photography, real-world]
+horizontal: false
+---
+
+<section class="diagonal patterned">
+	<div class="container">
+		<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_galleries/" class="btn"><strong>&#9998;</strong> Manage Galleries</a></p>
+	
+	<h2>** Disclaimer: any videos or images of games, films, shows, events, photos or artwork are used under 'Fair Use' for demonstration purposes only.
+Unless specified, RebrightFX was not used in the production of any of the games, films, shows, events, photos or artwork featured on this site.<br/>
+    </h2>
+		
+	{% for category in page.display_categories %}
+
+		<a id="{{ category }}" href=".#{{ category }}">
+			<h2 class="category">{{ category }}</h2>
+		</a>
+
+		{% assign enabled_galleries = site.galleries | where: "enabled", true %}
+		{% assign categorized_galleries = enabled_galleries | where: "category", category %}
+		{% assign sorted_galleries = categorized_galleries | sort: "importance" %}
+
+		{% assign all_images = site.static_files | where: "image", true %}
+	    
+		<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_galleries/" class="btn"><strong>&#9998;</strong> Manage Galleries</a></p>
+		<ul class="image-grid">
+
+			{% comment %}
+				look for any files in the cover folder and try to assign the cover image automatically.
+				use the rebrightfx enhanced image if it is found.
+				otherwise, use the regular original image instead.
+			{% endcomment %}
+			
+			{% for gal_page in sorted_galleries %}
+
+				{% comment %}
+				this is the previous code used to display the cover image. 
+				it used an explicitly specified image path set in each page's front matter.
+				{% assign cover_image_path = gal_page.gallery.main_folder%}
+				{% if gal_page.gallery.cover.image.after %}{% assign cover_image_path = cover_image_path | append: gal_page.gallery.cover.image.after %}
+				{% elsif gal_page.gallery.cover.image.before %}{% assign cover_image_path = cover_image_path | append: gal_page.gallery.cover.image.before %}
+				{% endif %}
+				{% endcomment %}
+
+				{% assign gallery_folder = gal_page.gallery.root_folder %}
+				{% assign gallery_folder = gallery_folder | append: gal_page.gallery.category_folder %}
+				{% assign gallery_folder = gallery_folder | append: gal_page.gallery.album_folder %}
+				
+				{% comment %}{% assign gallery_folder = gal_page.gallery.main_folder %}{% endcomment %}
+				{% assign before_folder = gal_page.gallery.before_folder %}
+				{% assign after_folder = gal_page.gallery.after_folder %}
+				{% assign image_size_folder = gal_page.gallery.image_size_folder %}
+				{% assign release_date_folder = gal_page.gallery.release_date_folder %}
+                
+				{% assign cover_folder = gal_page.gallery.cover_folder %}
+
+				{% assign before_folder_path = gallery_folder %}
+				{% assign before_folder_path = before_folder_path | append: cover_folder %}
+				{% assign before_folder_path = before_folder_path | append: before_folder %}
+				{% assign before_folder_path = before_folder_path | append: image_size_folder %}
+
+				{% assign after_folder_path = gallery_folder %}
+				{% assign after_folder_path = after_folder_path | append: cover_folder %}
+				{% assign after_folder_path = after_folder_path | append: after_folder %}
+				{% assign after_folder_path = after_folder_path | append: image_size_folder %}
+				{% assign after_folder_path = after_folder_path | append: release_date_folder %}
+
+				{% assign before_images = site.static_files | where_exp: "item", "item.path contains before_folder_path" %}
+				{% assign after_images = site.static_files | where_exp: "item", "item.path contains after_folder_path" %} 
+				
+				{% if after_images != null or after_images != ''%}
+				{% assign cover_image_path = after_images.first.path %}
+				{% elsif before_images != null or before_images != '' %}
+				{% assign cover_image_path = before_images.first.path %}
+				{% endif %}
+
+				{% comment %}
+				debug: cover image <br/>
+				after_images = {{after_images.first.path}} <br/>
+				before_images = {{before_images.first.path}} <br/>
+				cover_image_path = {{cover_image_path}} <br/>
+				title = {{gal_page.title}} <br/>
+				url = {{ site.baseurl }}{{ gal_page.url }}<br/>
+				{% endcomment %}
+				
+				<li>
+					<a href="{{ site.baseurl }}{{ gal_page.url }}">
+						{% if cover_image_path %}
+						<img src="{% include relative-src.html src=cover_image_path %}" alt="{{ gal_page.title }}" height=200>
+						{% endif %}
+						<div class="details">
+							<div class="name">{{ gal_page.title }}</div>
+							<div class="position">{{ gal_page.subtitle }}</div>
+						</div>
+					</a>
+				</li>
+			{% endfor %}
+			<li class="filler"></li>
+			<li class="filler"></li>
+		</ul>
+	{% endfor %}
+	</div>
+</section>
+

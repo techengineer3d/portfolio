@@ -8,11 +8,22 @@ layout: default
 
 <section class="hero diagonal">
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
-		{% if page.heading %}
+		{% if page.heading-large %}
+			<h2>{{ page.heading-large }}</h2>
+		{% elsif page.heading %}
 			<h2>{{ page.heading }}</h2>
 		{% elsif page.title %}
 			<h2>{{ page.title }}</h2>
 		{% endif %}
+
+		{% if page.heading-medium %}
+			<h1>{{ page.heading-medium }}</h1>
+			</br>
+		{% endif %}
+		{% if page.heading-small %}
+			<h3>{{ page.heading-small }}</h3>
+		{% endif %}
+
 		{% if page.subtitle %}
 			<p class="subtext">{{ page.subtitle }}</p>
 		{% endif %}

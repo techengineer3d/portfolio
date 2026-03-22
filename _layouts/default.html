@@ -10,10 +10,152 @@
 
 		<!-- putting this 1 here was the only way I could display the Google Translate widget without my website menu disappearing -->
 		1
+
+		<!-- header: css extensions and customizations go here -->
 		<!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/jekyll_google_translate.css" type="text/css"> --> <!--covered by section.hero-->
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/google_translate.css"> <!-- Google Translate button css, but website header menu disappears! -->
-
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
+		
+		{% if page.images %}
+			<!-- Image Layouts -->
+			{% if page.images.img-compare %}
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/img-comparision-slider.min.css"/>
+			<style>
+			#myImgComparisonSlider {
+				.before,
+				.after {
+					margin: 0;
+				}
+
+				.before figcaption,
+				.after figcaption {
+					background: #fff;
+					border: 1px solid #c0c0c0;
+					border-radius: 12px;
+					color: #2e3452;
+					opacity: 0.8;
+					padding: 12px;
+					position: absolute;
+					top: 95%;
+					transform: translateY(-50%);
+					line-height: 100%;
+				}
+
+				.before figcaption {
+					left: 12px;
+				}
+
+				.after figcaption {
+					right: 12px;
+				}
+
+				--default-handle-width: clamp(40px, 10vw, 100px);
+			}
+			</style>
+			{% endif %}
+
+			{% if page.images.twentytwenty %}
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/twentytwenty/foundation.css"/>
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/twentytwenty/twentytwenty.css"/>
+			{% endif %}
+
+			{% if page.images.photoswipe %}
+			{% endif %}
+
+			{% if page.images.swiperjs %}
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/swiperjs-bundle.min.css"/> 
+			<!-- <script src="{{ site.baseurl }}/js/swiperjs-element-bundle.min.js"></script> -->
+			{% endif %}
+
+			{% if page.images.lightbox2 %}
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/lightbox.min.css"/>
+			<!-- <script src="{{ site.baseurl }}/js/lightbox-plus-jquery-2.12.0.min.js"></script> -->
+			{% endif %}
+
+			{% if page.images.fancybox %}
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/jquery.fancybox.min.css"/>
+			<!-- <script src="{{ site.baseurl }}/js/jquery-3.6.0.min.js"></script>  -->
+            <!-- <script src="{{ site.baseurl }}/js/jquery.fancybox.min.js"></script> -->
+			{% endif %}
+
+			{% if page.images.fancyapps %}
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/fancyapps/6.1/dist/fancybox/fancybox.css"/>
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/fancyapps/6.1/dist/carousel/carousel.css"/>
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/fancyapps/6.1/dist/carousel/carousel.arrows.css"/>
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/fancyapps/6.1/dist/carousel/carousel.thumbs.css"/>
+			<link rel="stylesheet" href="{{ site.baseurl }}/css/fancyapps/6.1/dist/carousel/carousel.video.css"/>
+			
+			{% assign index_start = 1 %}
+			{% assign index_end = 15 %}
+			{% for i in (index_start..index_end) %}
+			<a href="#fancyCarousel{{ i }}">#fancyCarousel{{ i }}</a>
+			<style>
+			#fancyCarousel{{ i }} {
+				--f-arrow-pos: 10px;
+				--f-arrow-width: 38px;
+				--f-arrow-height: 38px;
+				--f-arrow-svg-width: 16px;
+				--f-arrow-svg-height: 16px;
+				--f-arrow-svg-stroke-width: 2.5;
+				--f-arrow-color: #475569;
+				--f-arrow-shadow: 0 6px 12px -2px rgb(50 50 93 / 25%), 0 3px 7px -3px rgb(0 0 0 / 30%);
+				--f-arrow-border-radius: 50%;
+				--f-arrow-bg: #fff;
+				--f-arrow-hover-bg: #f9f9f9;
+				--f-arrow-active-bg: #f0f0f0;
+			}
+
+			#fancyCarousel{{ i }} .f-carousel__slide {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+			}
+
+			#fancyCarousel{{ i }} .f-carousel__slide img {
+				max-width: 100%;
+				height: auto;
+			}
+			</style>
+			{% endfor %}
+			
+
+			
+			<!--
+			<style>
+			#myCarousel {
+				--f-arrow-pos: 10px;
+				--f-arrow-bg: rgba(255, 255, 255, 0.75);
+				--f-arrow-hover-bg: rgba(255, 255, 255, 1);
+				--f-arrow-color: #333;
+				--f-arrow-width: 40px;
+				--f-arrow-height: 40px;
+				--f-arrow-svg-width: 20px;
+				--f-arrow-svg-height: 20px;
+				--f-arrow-svg-stroke-width: 2px;
+				--f-arrow-border-radius: 50%;
+
+				height: 400px;
+			}
+
+			#myCarousel .f-carousel__slide {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			#myCarousel img {
+				max-width: 100%;
+				max-height: 100%;
+				height: auto;
+				object-fit: contain;
+			}
+			</style>
+			-->
+			
+			{% endif %}
+			
+		{% endif %}
 
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
@@ -92,5 +234,104 @@
 				return false;
 			};
 		</script>
+
+		<!-- body (end): javascript extension and customizations go here --> 
+		{% if page.images %}
+			{% if page.images.img-compare %}
+			<script src="{{ site.baseurl }}/js/img-comparison-slider.min.js"></script>
+			{% endif %}
+
+			{% if page.images.twentytwenty %}
+			<script src="{{ site.baseurl }}/js/jquery-3.6.0.min.js"></script> 
+			<script src="{{ site.baseurl }}/js/twentytwenty/jquery.event.move.js"></script>
+			<script src="{{ site.baseurl }}/js/twentytwenty/jquery.twentytwenty.js"></script>
+			<!-- init twenty twenty image comparison slider -->
+			 <script>
+				$(function(){
+					$(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+					$(".twentytwenty-container[data-orientation='vertical']").twentytwenty({default_offset_pct: 0.3, orientation: 'vertical'});
+				});
+			</script>
+			{% endif %}
+
+			{% if page.images.photoswipe %} 
+			{% endif %}
+			{% if page.images.swiperjs %}
+			<script src="{{ site.baseurl }}/js/swiperjs-element-bundle.min.js"></script> 
+			{% endif %}
+
+			{% if page.images.lightbox2 %}
+			<script src="{{ site.baseurl }}/js/lightbox-plus-jquery-2.12.0.min.js"></script>
+			{% endif %}
+			{% if page.images.fancybox %}
+			<!-- older fancybox uses jquery for automatic binding and initialization. best not to enable this if using newer fancyapps. -->
+			<script src="{{ site.baseurl }}/js/jquery-3.6.0.min.js"></script> 
+			<script src="{{ site.baseurl }}/js/jquery.fancybox.min.js"></script>
+			{% endif %}
+			
+			{% if page.images.fancyapps %}
+			<script src="{{ site.baseurl }}/js/fancyapps/6.1/dist/fancybox/fancybox.umd.js"></script>
+			<script src="{{ site.baseurl }}/js/fancyapps/6.1/dist/carousel/carousel.umd.js"></script>
+			<script src="{{ site.baseurl }}/js/fancyapps/6.1/dist/carousel/carousel.arrows.umd.js"></script>
+			<script src="{{ site.baseurl }}/js/fancyapps/6.1/dist/carousel/carousel.lazyload.umd.js"></script>
+			<script src="{{ site.baseurl }}/js/fancyapps/6.1/dist/carousel/carousel.thumbs.umd.js"></script>
+			<script src="{{ site.baseurl }}/js/fancyapps/6.1/dist/carousel/carousel.video.umd.js"></script>
+
+			<!-- newest fancyapps and fancybox does not use jquery and must be exclusively initialized. -->
+			<!-- basic init
+			<script>
+				Fancybox.bind("[data-fancybox]", {
+				// Custom options
+				});
+			</script>
+			-->
+			<script>
+				Fancybox.bind("[data-fancybox]", {
+					Carousel: {
+						Thumbs: {
+						type: "classic", // "modern" | "classic" | "scrollable"
+						},
+					},
+				});
+			</script>
+			<!-- basic init
+			<script>
+				Carousel(document.getElementById("myCarousel"), {
+					// Your custom options
+				}).init();
+			</script>
+			-->
+
+			{% assign index_start = 1 %}
+			{% assign index_end = 15 %}
+			{% for i in (index_start..index_end) %}
+			<script>
+			Carousel(document.getElementById("fancyCarousel{{ i }}"), {
+				Thumbs: {
+				type: "classic"
+				},
+			}, {
+				Arrows,
+				Lazyload,
+				Thumbs
+			}).init();
+			</script>
+			{% endfor %}
+
+            <!--
+			<script>
+			Carousel(document.getElementById("myCarousel1"), {
+				Thumbs: {
+				type: "classic"
+				},
+			}, {
+				Arrows,
+				Lazyload,
+				Thumbs
+			}).init();
+			</script>
+			-->
+			{% endif %}
+		{% endif %} <!-- if page.images -->
 	</body>
 </html>

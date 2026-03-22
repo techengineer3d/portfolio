@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% assign gallery = site.pages | where: "path", "gallery/index.html" | first %}
+
+<section class="hero diagonal">
+	<div class="container">
+		{% if gallery.heading %}
+		<h2><a href="{{ site.baseurl }}/gallery/">{{ gallery.heading }}</a> / {{ page.title | capitalize }}</h2>
+		{% endif %}
+		{% if gallery.subtitle %}
+			<p class="subtext">{{ gallery.subtitle }}</p>
+		{% endif %}
+	</div>
+</section>
+
+<section class="diagonal">
+	<div class="text-container">
+		<ul class="gallery-posts">
+			{% include gallery-list-posts.html posts=page.posts %}
+		</ul>
+	</div>
+</section>

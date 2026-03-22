@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<!--	
+<script src="/js/jquery-1.10.2.min.js"></script>
+<script src="/js/lightbox-2.6.min.js"></script>
+<link href="/css/lightbox.css" rel="stylesheet" />
+-->
+<script src="/js/lightbox-plus-jquery-2.12.0.min.js"></script>
+<link href="/css/lightbox.min.css" rel="stylesheet" />
+
+<p>default header for all image gallery pages</p>
+
+{% for gallery in site.data.gallery %}
+{% for collection in gallery.collections: %}
+{% for albums in collection.albums: %}
+{% if album.id == page.id %}
+  <h1>{{ album.name }}</h1>
+  <ol>
+  {% for list in album.images_list %}
+    {% for before_image in list.images_before %}
+      <li>
+      <a href="{{ gallery.imagefolder }}/{{ image.name }}" data-lightbox="{{ gallery.id }}" title="{{ image.text }}">
+          <img src="{{ gallery.imagefolder }}/{{ image.thumb }}">
+        </a>
+      </li>
+    {% endfor %}
+  {% endfor %}
+  </ol>
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+
+{% for gallery in site.data.gallery %}
+  {% if gallery.id == page.galleryid %}
+    <h1>{{ gallery.description }}</h1>
+    <ol>
+    {% for image in gallery.images %}
+      <li>
+        {{ image.text }}<br>
+        <a href="{{ gallery.imagefolder }}/{{ image.name }}" data-lightbox="{{ gallery.id }}" title="{{ image.text }}">
+          <img src="{{ gallery.imagefolder }}/{{ image.thumb }}">
+        </a>
+      </li>
+    {% endfor %}
+    </ol>
+  {% endif %}
+{% endfor %}
+
+<p>default footer for all gallery pages</p>
