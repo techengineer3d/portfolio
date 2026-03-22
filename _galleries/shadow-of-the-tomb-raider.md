@@ -11,7 +11,7 @@ gallery:
   root_folder: /images/galleries/rebrightfx
   category_folder: /games
   album_folder: /eidos-sottr
-  subfolders: [/08-kuwaq-yaku]
+  subfolders: [/07-peru-jungle, /08-kuwaq-yaku, /10-christian-mission, /11-tomb-mother-protector]
   enable_separate_galleries: false
   before_folder: /original-images
   after_folder: /rebrightfx-images
