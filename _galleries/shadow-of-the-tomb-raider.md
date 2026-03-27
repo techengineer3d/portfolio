@@ -11,13 +11,13 @@ gallery:
   root_folder: /images/galleries/rebrightfx
   category_folder: /games
   album_folder: /eidos-sottr
-  subfolders: [/07-peru-jungle, /08-kuwaq-yaku, /10-christian-mission, /11-tomb-mother-protector]
+  subfolders: [/07-peru-jungle/image-set-02, /08-kuwaq-yaku/image-set-02, /10-christian-mission/image-set-02]
   enable_separate_galleries: false
   before_folder: /original-images
   after_folder: /rebrightfx-images
   image_size_folder: /1440p
   thumbnails_folder: /thumbnails
-  release_date_folder: /2026-03-18
+  release_date_folder: /2026-03-22
   banner_folder: /banner
   cover_folder: /cover
   feature_folder: /feature
