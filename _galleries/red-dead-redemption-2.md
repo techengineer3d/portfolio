@@ -17,7 +17,7 @@ gallery:
   after_folder: /rebrightfx-images
   image_size_folder: /1440p
   thumbnails_folder: /thumbnails
-  release_date_folder: /2026-03-18
+  release_date_folder: /2026-03-22
   banner_folder: /banner
   cover_folder: /cover
   feature_folder: /feature
