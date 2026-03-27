@@ -18,6 +18,8 @@ layout: default
 <section class="diagonal">
 	<div class="container">
 		<!-- <p><img src="{% include relative-src.html src=page.image_path %}" class="screenshot"></p> -->
+
+		{{ content }}
         
 		<div>
 		<!-- IMAGE BANNER -->
@@ -230,9 +232,15 @@ layout: default
 		{% assign all_files = all_files | concat: afterImages %}
 
 		{% comment %}
-		debug:<br/>
-		before_folder_path = {{ before_folder_path }}<br/>
-		after_folder_path = {{ after_folder_path }}<br/>
+		debug<br/>
+		before_folder_path = {{before_folder_path}}<br/>
+		after_folder_path = {{after_folder_path}}<br/>
+		{% for file in beforeImages %}
+		found before image: {{file.path}}<br/>
+		{% endfor%}
+		{% for file in afterImages %}
+		found after image: {{file.path}}<br/>
+		{% endfor%}
 		{% endcomment %}
 		
 		{% endfor %} <!--for subfolder in subfolderlist-->
@@ -254,15 +262,15 @@ layout: default
 		<div class="f-carousel" id="fancyCarousel2">
 		<div class="f-carousel__viewport">
 		{% for file in sorted_files %}
-		{% if file.extname == '.jpg' %}
+		{% if file.extname == '.jpg' or file.extname == '.png'%}
 			<div
 			class="f-carousel__slide"
 			data-fancybox="ff7"
-			data-src="{{ site.baseurl }}/{{ file.path }}"
-			data-thumb-src="{{ site.baseurl }}/{{ file.path }}"
+			data-src="{{ site.baseurl }}{{ file.path }}"
+			data-thumb-src="{{ site.baseurl }}{{ file.path }}"
 			>
 			<img
-				data-lazy-src="{{ site.baseurl }}/{{ file.path }}"
+				data-lazy-src="{{ site.baseurl }}{{ file.path }}"
 				width="100%"
 				height="100%"
 				alt="Original"

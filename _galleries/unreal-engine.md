@@ -2,16 +2,16 @@
 layout: gallery-page
 enabled: true
 heading:
-name: Shadow of the Tomb Raider
-title: Shadow of the Tomb Raider 
+name: Unreal Engine
+title: Unreal Engine
 subtitle: RebrightFX Sample
-category: games
+category: game-dev
 gallery:
-  id: eidos-sottr
+  id: unreal-engine
   root_folder: /images/galleries/rebrightfx
-  category_folder: /games
-  album_folder: /eidos-sottr
-  subfolders: [/07-peru-jungle/image-set-02, /08-kuwaq-yaku/image-set-02, /10-christian-mission/image-set-02]
+  category_folder: /game-dev
+  album_folder: /unreal-engine
+  subfolders: [/ue-editor, /ue-editor-metahuman]
   enable_separate_galleries: false
   before_folder: /original-images
   after_folder: /rebrightfx-images
@@ -47,3 +47,7 @@ images:
 external_url:
 author_staff_member: techengineer3d
 ---
+
+RebrightFX for Unreal Engine is planned but not yet running in-engine.<br/>
+Below are simulated screenshots where RebrightFX's UHD series post effects were applied to screenshots of the Unreal Editor.<br/>
+These images are for reference only.<br/>

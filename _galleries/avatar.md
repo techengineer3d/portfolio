@@ -2,16 +2,16 @@
 layout: gallery-page
 enabled: true
 heading:
-name: Shadow of the Tomb Raider
-title: Shadow of the Tomb Raider 
+name: Avatar
+title: Avatar
 subtitle: RebrightFX Sample
-category: games
+category: films
 gallery:
-  id: eidos-sottr
+  id: movie-avatar
   root_folder: /images/galleries/rebrightfx
-  category_folder: /games
-  album_folder: /eidos-sottr
-  subfolders: [/07-peru-jungle/image-set-02, /08-kuwaq-yaku/image-set-02, /10-christian-mission/image-set-02]
+  category_folder: /films
+  album_folder: /avatar
+  subfolders: []
   enable_separate_galleries: false
   before_folder: /original-images
   after_folder: /rebrightfx-images
