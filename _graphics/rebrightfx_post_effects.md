@@ -66,7 +66,7 @@ With optimization work, it could be made suitable for use in game production and
 Reshade is largely used by the gaming community to apply custom shaders and post effects to enhance their game library.<br/>
 <br/>
 RebrightFX For Reshade can be used to visually enhance games, films, shows, animated works, digital art and photography.<br/>
-The image enhancements will look better on some games and media than others, depending on media production quality and production methods.<br/>
+The image enhancements will look better on some games and media than others, depending on production methods and quality.<br/>
 RebrightFX for Reshade UHD series post effect presets were designed for quality over performance and it currently incurs a performance hit.<br/>
 Optimal game play frame rates of 60 fps are not guaranteed, and performance will vary according to individual PC machine specs and 3D graphics settings.<br/>
 In the case of watching RebrightFX enhanced video, Reshade itself requires GPU acceleration to work and may not be fully compatible with all GPU accelerated media players.
@@ -103,6 +103,22 @@ Decent playable frame rates of 30fps or higher have been observed at resolutions
 Good movie playback and streaming video frame rates have been observed at resolutions of 1080p and 1440p.
 In general, higher monitor resolution settings will yield higher quality images but will also lower performance.
 
+### Example
+Image Comparison - Original VS RebrightFX
+
+<img-comparison-slider id=myImgComparisonSlider>
+  <figure slot="first" class="before">
+    <img width="100%" src="/portfolio/images/galleries/rebrightfx/3dcg/original-images/1440p/3dcg-techsmith-01-01-original.jpg">
+    <figcaption>Original</figcaption>
+  </figure>
+  <figure slot="second" class="after">
+    <img width="100%" src="/portfolio/images/galleries/rebrightfx/3dcg/rebrightfx-images/1440p/2026-03-18/3dcg-techsmith-01-02-rc1-2026-03-18-rebrightfx-uhd-dynamic-sharp-luma-bright-04-chroma-vibrant.jpg">
+    <figcaption>RebrightFX</figcaption>
+  </figure>
+</img-comparison-slider>
+
+<br/>
+
 ## Image & Video Media Samples
 
 ** Disclaimer: any videos or images of games, films, shows, events, photos or artwork are used under 'Fair Use' for demonstration purposes only.
@@ -113,21 +129,6 @@ Please check out the gallery section on this site for RebrightFX image and video
 
 Videos are also available on the official RebrightFX YouTube channel:<br/>
 <p><a href="http://www.youtube.com/@rebrightfx">RebrightFX YouTube channel &rarr;</a></p>
-
-### Example
-Image Comparison - Original VS RebrightFX
-
-<img-comparison-slider id=myImgComparisonSlider>
-  <figure slot="first" class="before">
-    <img width="100%" src="/portfolio/images/galleries/rebrightfx/3dcg/original-images/1440p/3dcg-techsmith-01-01-original.jpg">
-    <figcaption>Original</figcaption>
-  </figure>
-  <figure slot="second" class="after">
-    <img width="100%" src="/portfolio/images\galleries\rebrightfx\3dcg\rebrightfx-images\1440p\2026-03-18\3dcg-techsmith-01-02-rc1-2026-03-18-rebrightfx-uhd-dynamic-sharp-luma-bright-04-chroma-vibrant.jpg">
-    <figcaption>RebrightFX</figcaption>
-  </figure>
-</img-comparison-slider>
-
 
 <!-- START COMMENT OUT
 
