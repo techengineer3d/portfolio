@@ -112,7 +112,7 @@ Image Comparison - Original VS RebrightFX
     <figcaption>Original</figcaption>
   </figure>
   <figure slot="second" class="after">
-    <img width="100%" src="/portfolio/images/galleries/rebrightfx/3dcg/rebrightfx-images/1440p/2026-03-18/3dcg-techsmith-01-02-rc1-2026-03-18-rebrightfx-uhd-dynamic-sharp-luma-bright-04-chroma-vibrant.jpg">
+    <img width="100%" src="/portfolio/images/galleries/rebrightfx/3dcg/rebrightfx-images/1440p/2026-04-05/3dcg-techsmith-01-02-rc1-2026-04-05-rebrightfx-uhd-dynamic-sharp-luma-bright-highlight-balanced-1.00-chroma-vibrant-3d-eye-depth.jpg">
     <figcaption>RebrightFX</figcaption>
   </figure>
 </img-comparison-slider>
