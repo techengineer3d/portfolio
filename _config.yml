@@ -27,10 +27,10 @@ collections:
     output: false
   clients:
     output: true
-  graphics:
+  projects:
     output: true
-  galleries:
-    output: true
+#  galleries:
+#    output: true
 
 paginate: 10
 paginate_path: "/blog/:num/"
@@ -75,9 +75,9 @@ defaults:
           height: 2000
   - scope:
       path: ""
-      type: "graphics"
+      type: "projects"
     values:
-      layout: "graphic"
+      layout: "project"
       _options:
         image_path:
           width: 2000
