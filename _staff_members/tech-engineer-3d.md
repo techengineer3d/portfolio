@@ -5,11 +5,11 @@ image_path: /uploads/game-developer-1.jpg
 twitter:
 ---
 
-I have worked in the games industry for over 15 years as an Engineer and a Technical Artist with a focus on pipeline tools and graphics programming.
+I have worked in the games industry for over 15 years as an Engineer and a Technical Artist with a focus on tool development, graphics programming, art pipeline improvement, and general game development.
 
-I like finding efficient ways to improve workflows, reduce development time and solve the daily problems encountered on game development projects.
+I like finding efficient ways to improve workflows, reduce development time and solve the daily technical problems encountered on game development projects.
 
-I am also very passionate about real-time 3D graphics and have a strong interest in Dev-Ops, AI and Machine Learning.
+I am also very interested in AI and Machine Learning technology for improving the way people work.
 
 I studied game development programming at [DigiPen in Vancouver, British Columbia](https://www.digipen.edu/about/our-history){: target="_blank"}. 
 Afterwards, I decided to move overseas to pursue a career as a game developer, continue my studies in game development and gain international experience abroad.

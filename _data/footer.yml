@@ -4,10 +4,10 @@
       link: /
     - name: Clients
       link: /clients/
-    - name: Graphics
-      link: /graphics/
-    - name: Gallery
-      link: /gallery/    
+    - name: Projects
+      link: /projects/
+#    - name: Gallery
+#      link: /gallery/    
     - name: About
       link: /about/
     - name: Contact

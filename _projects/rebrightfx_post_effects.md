@@ -29,63 +29,88 @@ gallery:
 # RebrightFX
 
 2025/03 ~ Present <br/>
-Realtime Cinematic Post Effects <br/>
-Category: Shaders (HLSL) <br/>
+Advanced Realtime Cinematic Post Effect <br/>
+Category: Graphics Shaders <br/>
 Platforms: Reshade, Game Engine (pending) <br/>
 
 ## Overview
 
-RebrightFX is a complex real-time cinematic post effect for enhancing digital image quality and features of digital media and digital entertainment.<br/>
+RebrightFX is a real-time, complex cinematic post effect for enhancing the quality and features of digital images and media, such as games, movies, shows and animation.<br/>
 It is the result of my personal graphics research and development work.<br/>
 
-Achieved goals of this work include enhancing and improving the appearance of:
+Areas of digital graphics enhancement and improvement include:
 
-- light emission and surface illumination 
-- self shadowing
-- cinematic bloom 
-- visual perception of depth and space
-- image fidelity and sharpness
-- surface detail
-- color tone and color vibrancy  
+<u>Emissive Illumination</u><br/>
+Enhanced appearance of light and illumination, to give it a more bright, vibrant, emissive, photonic glow that looks closer to real world light, instead of the current flat approximations or captures.
 
-RebrightFX is designed to be suitable for all kinds of digital media, including:
+<u>Self Shadowing and Shape Perception</u><br/> 
+Improved self shadowing, to improve contours and give a better visual sense of object shape and definition.
 
-- games
-- movies, shows and video
-- 2d and 3dcg animated works
-- artwork
-- photography
+<u>Visual Spatial Perception and Improved Natural Eye Focus and Tracking</u><br/>
+Improved visual perception and sense of object space, distance between objects and depth, to improve visual realism and to improve natural human eye focus and tracking of objects when looking at digital media.
 
-RebrightFX is currently working under the Reshade shader tool, and can be used to enhance existing games as well as movie playback on certain media players.<br/>
-Additional work is planned to get it operational in game engines like Unreal Engine and Unity.<br/>
-With optimization work, it could be made suitable for use in game production and potentially virtual film production.<br/>
+<u>Image Clarity and Sharpness</u><br/>
+Improved image clarity, sharpness and fidelity, to make it look as clear as glass, as if like looking through a window to another world.
+
+<u>High Definition Fine Image Detail</u><br/> 
+Improved image details and micro-details, to enhance it to finer, sharper, higher definition detail levels
+
+<u>Cinematic Look with Bloom and Tonemapping</u><br/>
+Cinematic effects like multiple bloom techniques for enhancing illumination, and multiple tonemapping techniques for improved contrast, deep shadows, and a more vibrant look.
+
+<u>Richer Color</u><br/>
+Improved color tones and hues, to make colors richer, deeper and more vibrant. 
+
+## Disclaimer
+
+** Any videos or images of games, films, shows, events, photos or artwork are used under 'Fair Use' for demonstration purposes only.
+Unless specified, RebrightFX was not used in the production of any of the games, films, shows, events, photos or artwork featured on this site.<br/>
+<br/>
+
+## Image Sample
+
+Image Comparison - Original VS RebrightFX
+
+<img-comparison-slider id=myImgComparisonSlider>
+  <figure slot="first" class="before">
+    <img width="100%" src="/portfolio/images/galleries/rebrightfx/3dcg/original-images/1440p/3dcg-techsmith-01-01-original.jpg">
+    <figcaption>Original</figcaption>
+  </figure>
+  <figure slot="second" class="after">
+    <img width="100%" src="/portfolio/images/galleries/rebrightfx/3dcg/rebrightfx-images/1440p/2026-04-05/3dcg-techsmith-01-02-rc1-2026-04-05-rebrightfx-uhd-dynamic-sharp-luma-bright-highlight-balanced-1.00-chroma-vibrant-3d-eye-depth.jpg">
+    <figcaption>RebrightFX</figcaption>
+  </figure>
+</img-comparison-slider>
+
+<br/>
+
+## Video Samples
+
+<!-- Please check out the gallery section on this site for RebrightFX image and video samples.<br/>
+<p><a href="{{ site.baseurl }}/galleries">Gallery section &rarr;</a></p> -->
+
+Video samples of RebrightFX enhanced games and movies are available on the official RebrightFX YouTube channel:<br/>
+<p><a href="http://www.youtube.com/@rebrightfx">RebrightFX YouTube channel &rarr;</a></p>
 
 ## About Reshade
 
-[Reshade](https://www.reshade.me/) is a shader injector tool that allows you to apply custom shader effects to existing games and media players.<br/>
-Reshade is largely used by the gaming community to apply custom shaders and post effects to enhance their game library.<br/>
-<br/>
-RebrightFX For Reshade can be used to visually enhance games, films, shows, animated works, digital art and photography.<br/>
-The image enhancements will look better on some games and media than others, depending on production methods and quality.<br/>
-RebrightFX for Reshade UHD series post effect presets were designed for quality over performance and it currently incurs a performance hit.<br/>
-Optimal game play frame rates of 60 fps are not guaranteed, and performance will vary according to individual PC machine specs and 3D graphics settings.<br/>
-In the case of watching RebrightFX enhanced video, Reshade itself requires GPU acceleration to work and may not be fully compatible with all GPU accelerated media players.
+[Reshade](https://www.reshade.me/) is a shader injector tool that allows you to apply custom shader effects to apu accelerated applications, like games and media players.<br/>
+Reshade is largely used by the gaming community to apply custom realtime shaders and post effects to enhance the gaming experience.<br/>
 
 ## About Development
 
-As a realtime graphics programmer, I found [Reshade](https://www.reshade.me/) to be an invaluable tool for rapid prototyping and development of shader effects.
-Reshade allowed me to rapidly check the results of my work in different scenes and environments across different kinds of digital media like games, movies, animation, as well as artwork and photography.
-[Reshade](https://www.reshade.me/) made it possible for me to rapidly develop a high quality cinematic post effect compatible with all kinds of digital media.
-This workflow is a stark contrast to the typical game develoment shader programming work that takes forever to compile, run and check in a game engine.
-Shader post effects that look fine in one game project may actually have glaring defects that are not detected due to having a single fixed environment that cannot be easily or quickly changed.
-When shader post effects can be rapidly checked in different environments with different conditions, defects can be spotted much more effectively.
+As a realtime graphics programmer, I found [Reshade](https://www.reshade.me/) to be an invaluable tool for rapid prototyping, testing and quality checking the development of the RebrightFX shader post effect.
+Reshade allowed me to rapidly check the results of my work in different scenes and lighting environments across different kinds of digital media like games, movies, animation, as well as digital images like artwork and photography.
+[Reshade](https://www.reshade.me/) made it possible for me to quickly develop a high quality cinematic post effect compatible with all kinds of digital media.
+Shader post effects that look fine in one game engine project may actually have graphic defects that are not detected due to being in a single fixed environment that cannot be easily changed or quickly swapped.
+When shader post effects can be rapidly checked on different media, in different environments with different conditions, defects can be spotted much more effectively.
 It is important to have properly tuned shader effects that correctly work on everything as expected, not just on one project or media title.
 RebrightFX post effects are meticulously checked for quality assurance against a large number of games, movies, and 2d/3d animated productions.
 
-## Releases
+## Release Info
 
-RebrightFX for Reshade will soon be publicly released for commercial sale.<br/>
-Check back soon for details!<br/>
+A home use version for enhancement of personal game and movie libraries is nearing completion for release.<br/>
+Additional work is planned to develop a version for use in game engines like Unreal Engine and Unity.<br/>
 
 ## Minimum Hardware Requirements
 
@@ -102,33 +127,6 @@ Internal testing was conducted on a mid-spec gaming machine equipped with an Nvi
 Decent playable frame rates of 30fps or higher have been observed at resolutions of 1080p and 1440p, depending on the game's graphics settings. 
 Good movie playback and streaming video frame rates have been observed at resolutions of 1080p and 1440p.
 In general, higher monitor resolution settings will yield higher quality images but will also lower performance.
-
-### Example
-Image Comparison - Original VS RebrightFX
-
-<img-comparison-slider id=myImgComparisonSlider>
-  <figure slot="first" class="before">
-    <img width="100%" src="/portfolio/images/galleries/rebrightfx/3dcg/original-images/1440p/3dcg-techsmith-01-01-original.jpg">
-    <figcaption>Original</figcaption>
-  </figure>
-  <figure slot="second" class="after">
-    <img width="100%" src="/portfolio/images/galleries/rebrightfx/3dcg/rebrightfx-images/1440p/2026-04-05/3dcg-techsmith-01-02-rc1-2026-04-05-rebrightfx-uhd-dynamic-sharp-luma-bright-highlight-balanced-1.00-chroma-vibrant-3d-eye-depth.jpg">
-    <figcaption>RebrightFX</figcaption>
-  </figure>
-</img-comparison-slider>
-
-<br/>
-
-## Image & Video Media Samples
-
-** Disclaimer: any videos or images of games, films, shows, events, photos or artwork are used under 'Fair Use' for demonstration purposes only.
-Unless specified, RebrightFX was not used in the production of any of the games, films, shows, events, photos or artwork featured on this site.<br/>
-<br/>
-Please check out the gallery section on this site for RebrightFX image and video samples.<br/>
-<p><a href="{{ site.baseurl }}/galleries">Gallery section &rarr;</a></p>
-
-Videos are also available on the official RebrightFX YouTube channel:<br/>
-<p><a href="http://www.youtube.com/@rebrightfx">RebrightFX YouTube channel &rarr;</a></p>
 
 <!-- START COMMENT OUT
 
