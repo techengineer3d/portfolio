@@ -109,17 +109,10 @@ Image Comparison - Original VS RebrightFX
     />
     </div>
   {% endif %}
-{% endfor %}jek
+{% endfor %}
   </div>
 </div>
 <br/>
-
-
-### Game - Shadow of the Tomb Raider
-
-### Film - Ready Player One
-
-### Film - Aliens
 
 ## Video Samples
 
