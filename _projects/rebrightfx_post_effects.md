@@ -77,7 +77,7 @@ Video samples of RebrightFX enhanced games and movies are available on the offic
 
 ## Image Samples
 
-Image Comparison - Original VS RebrightFX
+Image Swiper - A/B Comparison - Original VS RebrightFX
 
 <img-comparison-slider id=myImgComparisonSlider>
   <figure slot="first" class="before">
@@ -91,6 +91,16 @@ Image Comparison - Original VS RebrightFX
 </img-comparison-slider>
 
 <br/>
+
+Image Viewer - Side by Side Comparison <br/>
+<br/>
+Images are best viewed full-screen with the bottom thumbnail navigation turned off.<br/>
+Click on an image in the image slider to enter exclusive viewing mode, then use the image viewer toolbar located in the upper right corner for toggling the bottom thumbnails and fullscreen mode.
+<br/>
+| Item Name | Preview Image |
+| :--- | :---: |
+| Fullscreen | ![Fullscreen Button]({{"/images/rebrightfx/ui/image-viewer-toolbar-fullscreen-button.jpg" | relative_url}}) |
+| Thumbnails | ![Thumbnail Button]({{"/images/rebrightfx/ui/image-viewer-toolbar-thumbnail-button.jpg | relative_url}}) |
 
 ### Games
 
