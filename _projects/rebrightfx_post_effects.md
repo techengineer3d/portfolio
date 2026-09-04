@@ -67,6 +67,14 @@ Improved color tones and hues, to make colors richer, deeper and more vibrant.
 Unless specified, RebrightFX was not used in the production of any of the games, films, shows, events, photos or artwork featured on this site.<br/>
 <br/>
 
+## Video Samples
+
+<!-- Please check out the gallery section on this site for RebrightFX image and video samples.<br/>
+<p><a href="{{ site.baseurl }}/galleries">Gallery section &rarr;</a></p> -->
+
+Video samples of RebrightFX enhanced games and movies are available on the official RebrightFX YouTube channel:<br/>
+<p><a href="http://www.youtube.com/@rebrightfx">RebrightFX YouTube channel &rarr;</a></p>
+
 ## Image Samples
 
 Image Comparison - Original VS RebrightFX
@@ -84,7 +92,9 @@ Image Comparison - Original VS RebrightFX
 
 <br/>
 
-### Game - Rise of the Tomb Raider
+### Games
+
+#### Rise of the Tomb Raider
 {% assign folder1 = site.static_files | where_exp: "item", "item.path contains 'images/rebrightfx/samples/games/rottr'" %}
 
 {% assign all_files = folder1 %}
@@ -114,13 +124,100 @@ Image Comparison - Original VS RebrightFX
 </div>
 <br/>
 
-## Video Samples
+#### Shadow of the Tomb Raider
 
-<!-- Please check out the gallery section on this site for RebrightFX image and video samples.<br/>
-<p><a href="{{ site.baseurl }}/galleries">Gallery section &rarr;</a></p> -->
+{% assign folder1 = site.static_files | where_exp: "item", "item.path contains 'images/rebrightfx/samples/games/sottr'" %}
 
-Video samples of RebrightFX enhanced games and movies are available on the official RebrightFX YouTube channel:<br/>
-<p><a href="http://www.youtube.com/@rebrightfx">RebrightFX YouTube channel &rarr;</a></p>
+{% assign all_files = folder1 %}
+
+{% assign sorted_files = all_files | sort: 'name' %}
+
+<div class="f-carousel" id="fancyCarousel2">
+  <div class="f-carousel__viewport">
+{% for file in sorted_files %}
+  {% if file.extname == '.jpg' %}
+    <div
+    class="f-carousel__slide"
+    data-fancybox="ff7"
+    data-src="{{ site.baseurl }}/{{ file.path }}"
+    data-thumb-src="{{ site.baseurl }}/{{ file.path }}"
+    >
+    <img
+        data-lazy-src="{{ site.baseurl }}/{{ file.path }}"
+        width="1920"
+        height="1080"
+        alt="Original"
+    />
+    </div>
+  {% endif %}
+{% endfor %}
+  </div>
+</div>
+<br/>
+
+### Films
+
+#### Aliens
+
+{% assign folder1 = site.static_files | where_exp: "item", "item.path contains 'images/rebrightfx/samples/films/aliens'" %}
+
+{% assign all_files = folder1 %}
+
+{% assign sorted_files = all_files | sort: 'name' %}
+
+<div class="f-carousel" id="fancyCarousel3">
+  <div class="f-carousel__viewport">
+{% for file in sorted_files %}
+  {% if file.extname == '.jpg' %}
+    <div
+    class="f-carousel__slide"
+    data-fancybox="ff7"
+    data-src="{{ site.baseurl }}/{{ file.path }}"
+    data-thumb-src="{{ site.baseurl }}/{{ file.path }}"
+    >
+    <img
+        data-lazy-src="{{ site.baseurl }}/{{ file.path }}"
+        width="1920"
+        height="1080"
+        alt="Original"
+    />
+    </div>
+  {% endif %}
+{% endfor %}
+  </div>
+</div>
+<br/>
+
+#### Ready Player One
+
+{% assign folder1 = site.static_files | where_exp: "item", "item.path contains 'images/rebrightfx/samples/films/rp1'" %}
+
+{% assign all_files = folder1 %}
+
+{% assign sorted_files = all_files | sort: 'name' %}
+
+<div class="f-carousel" id="fancyCarousel4">
+  <div class="f-carousel__viewport">
+{% for file in sorted_files %}
+  {% if file.extname == '.jpg' %}
+    <div
+    class="f-carousel__slide"
+    data-fancybox="ff7"
+    data-src="{{ site.baseurl }}/{{ file.path }}"
+    data-thumb-src="{{ site.baseurl }}/{{ file.path }}"
+    >
+    <img
+        data-lazy-src="{{ site.baseurl }}/{{ file.path }}"
+        width="1920"
+        height="1080"
+        alt="Original"
+    />
+    </div>
+  {% endif %}
+{% endfor %}
+  </div>
+</div>
+<br/>
 
 ## About Reshade
 
