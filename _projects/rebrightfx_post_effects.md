@@ -67,7 +67,7 @@ Improved color tones and hues, to make colors richer, deeper and more vibrant.
 Unless specified, RebrightFX was not used in the production of any of the games, films, shows, events, photos or artwork featured on this site.<br/>
 <br/>
 
-## Image Sample
+## Image Samples
 
 Image Comparison - Original VS RebrightFX
 
@@ -83,6 +83,43 @@ Image Comparison - Original VS RebrightFX
 </img-comparison-slider>
 
 <br/>
+
+### Game - Rise of the Tomb Raider
+{% assign folder1 = site.static_files | where_exp: "item", "item.path contains 'images/rebrightfx/samples/games/rottr'" %}
+
+{% assign all_files = folder1 %}
+
+{% assign sorted_files = all_files | sort: 'name' %}
+
+<div class="f-carousel" id="fancyCarousel1">
+  <div class="f-carousel__viewport">
+{% for file in sorted_files %}
+  {% if file.extname == '.jpg' %}
+    <div
+    class="f-carousel__slide"
+    data-fancybox="ff7"
+    data-src="{{ site.baseurl }}/{{ file.path }}"
+    data-thumb-src="{{ site.baseurl }}/{{ file.path }}"
+    >
+    <img
+        data-lazy-src="{{ site.baseurl }}/{{ file.path }}"
+        width="1920"
+        height="1080"
+        alt="Original"
+    />
+    </div>
+  {% endif %}
+{% endfor %}jek
+  </div>
+</div>
+<br/>
+
+
+### Game - Shadow of the Tomb Raider
+
+### Film - Ready Player One
+
+### Film - Aliens
 
 ## Video Samples
 
