@@ -95,7 +95,7 @@ Image Swiper - A/B Comparison - Original VS RebrightFX
 Image Viewer - Side by Side Comparison <br/>
 <br/>
 Images are best viewed full-screen with the bottom thumbnail navigation turned off.<br/>
-Click on an image in the image viewers below to enter exclusive viewing mode, then use the image viewer toolbar located in the upper right corner for toggling the bottom thumbnails and fullscreen mode.
+Click on an image in the image viewers below to enter exclusive viewing mode, then use the image viewer toolbar located in the upper right corner for toggling the bottom thumbnails and fullscreen.<br/>
 <br/>
 Image Toolbar Reference Image:<br/>
 
