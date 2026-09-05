@@ -97,7 +97,7 @@ Image Viewer - Side by Side Comparison <br/>
 Images are best viewed full-screen with the bottom thumbnail navigation turned off.<br/>
 Click on an image in the image viewers below to enter exclusive viewing mode, then use the image viewer toolbar located in the upper right corner for toggling the bottom thumbnails and fullscreen.<br/>
 <br/>
-Image Toolbar Reference Image:<br/>
+Image Viewer Toolbar Reference:<br/>
 
 ![Fullscreen Button]({{"/images/rebrightfx/ui/image-viewer-toolbar-fullscreen-button.jpg" | relative_url}})
 
