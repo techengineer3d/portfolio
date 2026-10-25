@@ -2,7 +2,7 @@
 name: RebrightFX
 title: RebrightFX
 subtitle: Advanced Realtime Image Enhancement For Digital Media
-start_date: 2025-03-01
+start_date: 2025-01-01
 end_date: Present
 external_url: 
 #image_path: /images/graphics/rebrightfx/logos/original-images/1440p/rebrightfx-logo-mysticism-01-01-original.jpg
@@ -28,7 +28,7 @@ gallery:
 
 # RebrightFX
 
-2025/03 ~ Present <br/>
+2025/01 ~ Present <br/>
 Advanced Realtime Cinematic Post Effect <br/>
 Category: Graphics Shaders <br/>
 Platforms: Reshade, Game Engine (pending) <br/>
