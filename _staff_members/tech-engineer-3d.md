@@ -5,14 +5,17 @@ image_path: /uploads/game-developer-1.jpg
 twitter:
 ---
 
-I have worked in the games industry for over 15 years as an Engineer and a Technical Artist with a focus on tool development, graphics programming, art pipeline improvement, and general game development.
+I am a Senior Game Developer that has worked in the games industry for over 15 years as an Engineer and a Technical Artist with a focus on tool development, graphics programming, art pipeline improvement, and general game development.
 
 I like finding efficient ways to improve workflows, reduce development time and solve the daily technical problems encountered on game development projects.
 
 I am also very interested in AI and Machine Learning technology for improving the way people work.
 
-I studied game development programming at [DigiPen in Vancouver, British Columbia](https://www.digipen.edu/about/our-history){: target="_blank"}. 
+I studied game development programming in 1997 at [DigiPen in Vancouver, British Columbia](https://www.digipen.edu/about/our-history){: target="_blank"}. 
 Afterwards, I decided to move overseas to pursue a career as a game developer, continue my studies in game development and gain international experience abroad.
+
+<!-- 
+Since 2025, I have taken an intentional sabbatical to pursue indpendent graphics research on RebrightFX, a project aimed at improving cinematic visual quality of games, and films in realtime.
 
 I last worked at Square Enix as a Tools & Workflow Engineer in the Advanced Technology Division [Square Enix](/portfolio/clients/square-enix/){: target="_blank"}
 
@@ -25,6 +28,7 @@ I have also previously worked as an Engineer and Technical Artist on mobile and 
 - [Demon's Souls](/portfolio/clients/from-software/){: target="_blank"}.
 
 &nbsp;
+-->
 
 ## Contact
 
