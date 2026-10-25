@@ -27,7 +27,8 @@ I also added several new features to the internal Maya facial animation export t
 This allowed the artists to export only the data they needed, and helped to reduce data export times. <br/>
 I also wrote the tool’s user manual in Japanese and English language using [Material for MK Docs](https://squidfunk.github.io/mkdocs-material/). <br/>
 
-
+### Facial Animation C++ Library Runtime
+I assisted my team lead and head of the internal facial animation library with improving and updating the libary C++ source code, adding new API functions to improve animation playback features, to provide additional features to the Maya based tools, and to improve facial animation debugging support. I also assisted with CICD Jenkins builds of the facial animation libarary, and monitored for any build errors.
 
 ### Facial Animation Debug Tools For Luminous Engine And Unreal Engine
 I created debugging tools for testing character facial rig controls in Luminous Engine and Unreal Engine. <br/>
@@ -37,7 +38,7 @@ I also created an animation playback tool for testing the facial motions in the 
 The playback tool featured standard media controls such as play, pause, stop, frame advance and also a timeline slider. <br/>
 
 ### Internal Maya Tools Python Upgrade Work
-I assisted in upgrading internal Maya tool source code from Python 2 to Python 3 in order to support newer versions of Maya. <br/>
+I assisted in upgrading all internal Maya tool source code at Square Enix from Python 2 to Python 3 in order to support newer versions of Maya. <br/>
 This ensured that the artists could continue their work with the latest version of Maya, using the latest features. <br/>
 
 ### Game Development Work
