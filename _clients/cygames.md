@@ -24,9 +24,23 @@ Tokyo, Japan <br/>
 
 ## Overview
 
-At [Cygames](https://www.cygames.co.jp/en/), I worked on Unity game development, art pipeline tools for the AAA game title “Project Awakening – Arise”, and also internal tools used by the Technical Artist Team. <br/>
+At [Cygames](https://www.cygames.co.jp/en/), I worked on Unity game development, art pipeline tools for the AAA game title “Project Awakening – Arise”, and internal tools used by the Technical Artist Team. <br/>
 
-### Extension of Open Source Maya Tool "Studio Library"
+### Take over and improvment of internal Maya tools
+
+I had been tasked with taking over and improving existing Maya tools used for production work on a AAA game title.
+There were various tool UI panels that had very poor performance and response, causing delays for artists.
+After profiling and debug checking the tool source code, I was able to determine the cause and provided code updates and fixes, making the tool UI elements much more responsive and allowing artists to work at their regular pace.
+One example of this was a maya scene file browser that artists used to rapidly find and switch between different maya scenes they were working on. Before I took over the tools, the browser was very slow and struggling to display the contents of a production folder containing hundreds of maya scene files. This caused long delays, as the artists had to wait for the Maya scene browser tool each time they scrolled through the list. After I optimized the scene browser, artists were able to smoothly display and scroll through huge lists of Maya scene files in real-time without any delay.
+After discussing the tool situation with the artists and how I could best support them, I added a realtime text search filter to the Maya scene file browser, allowing artists to instantly find the scene files they needed to work with.
+I also implemented integration support for Perforce and Autodesk Shotgrid, allowing artists to version control their work and also view and change a models Shotgrid task status directly from Maya. The integrations I provided allowed the artists to stay focused within their main Maya work environment, reducing delays that are caused by frequent application focus switching.
+
+### Critical Fixes For Remote Work
+
+Near the end of 2019, all staff were informed the company would be shifting to remote work from home due to the global pandemic outbreak of COVID-19. Artists went home first, with engineers scheduled to leave a week or two later.
+Reports came in that the artists working on the AAA Project Awakening title could not connect their Maya tools over their home networks to the on-premise Perforce server, bringing production to a halt. After intense debugging and info research, I discovered that the main issue was with Perforce secure socket layer binary file. To resolve the issue, I built a new Maya compatible secure socket layer Perforce binary, which restored network Perforce access to the artists working remotely from home, and allowed the artists to resume work on the game's art production.
+
+### Customization of Open Source Maya Tool "Studio Library"
 
 [Studio Library](https://www.studiolibrary.com/){: target="_blank"} is a free tool for managing poses and animation in Maya. <br/>
 I created a customized version of Studio Library for the character animator artists. <br/>
@@ -38,7 +52,7 @@ Perforce icons were added to all pose thumbnail previews to let artists know the
 Poses in Studio Library are always created at the origin (0,0,0). But sometimes artists need to apply poses to characters in other locations.  <br/>
 Support was added to make it possible to apply Studio Library poses to characters at world locations other than the origin. <br/>
 
-### Extension of Open Source Maya Tool "Pyblish"
+### Customization of Open Source Maya Tool "Pyblish"
 
 [Pyblish](https://pyblish.com/){: target="_blank"} is a free tool for checking and verifying that art assets comply with production guidelines, such as naming convention rules. <br/>
 The tool can be used in various DCC software, such as Maya. <br/>
@@ -49,12 +63,12 @@ Invalid object names were listed with red text in the Pyblish validation result 
 ### Unreal Engine Game Map Data Export Tool
 
 I wrote a C++ game map data export tool, which exported game model names and world locations to a data file. <br/>
-The exported data file was used to import the game map models into a different game engine. <br/>
+The exported data file was used to migrate and import the UE4 game map models into a new custom game engine. <br/>
 
 ### Unreal Engine Character Hair Shading
 
-I assisted with shading work the main character’s hair for a AAA Unreal Engine fantasy game project. <br/>
-This work included researching methods for improving graphics quality of the hair shader, and also previewing and debugging the hair shader materials on game console. <br/>
+I assisted with shading work on the main character’s hair for Project Awakening. <br/>
+This work included researching methods for improving the graphics quality of the original UE4 hair shader, and also previewing and debugging the new hair shader materials on the PS4 game console. <br/>
 
 ### Localization Work
 
