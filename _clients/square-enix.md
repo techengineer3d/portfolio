@@ -19,14 +19,15 @@ Tokyo, Japan <br/>
 At [Square Enix Japan](https://www.square-enix.com/), I worked as a Tools & Workflow engineer in the [Advanced Technology Division](http://www.jp.square-enix.com/tech/#), developing in-house Maya tools as well as game engine editor tools for [Luminous Engine](https://www.luminous-productions.com/engine/) and [Unreal Engine](https://www.unrealengine.com/) 5.
 
 ### Maya Facial Animation Exporter
-I was assigned to work on the company’s internal facial animation tools and programming libraries. <br/>
-I added several new features to the internal Maya facial animation export tool. <br/>
-I implemented a tool data compatibility feature so that the tool would still work with Maya scenes that had been saved with facial animation data from a different version of the tool. <br/>
-This step made sure that artists could continue their work without interruption due to different tool data versions. <br/>
+I was assigned to work on the company’s internal facial animation Maya tools and C++ programming libraries. <br/>
+For the Maya facial tools, I implemented a tool data compatibility feature so that older tool versions would still work with Maya scenes that had been saved with facial animation data from a newer version of the tool. <br/>
+This step made sure that artists who had not yet updated their tools could still continue their work without interruption. <br/>
 
-I added support for selective export of facial animation data, such as facial motion, facial libraries and catalogs, and character rig data. <br/>
+I also added several new features to the internal Maya facial animation export tool, such as the selective export of facial animation motions, facial motion libraries and catalogs, and character rig data.<br/>
 This allowed the artists to export only the data they needed, and helped to reduce data export times. <br/>
 I also wrote the tool’s user manual in Japanese and English language using [Material for MK Docs](https://squidfunk.github.io/mkdocs-material/). <br/>
+
+
 
 ### Facial Animation Debug Tools For Luminous Engine And Unreal Engine
 I created debugging tools for testing character facial rig controls in Luminous Engine and Unreal Engine. <br/>
@@ -42,4 +43,4 @@ This ensured that the artists could continue their work with the latest version 
 ### Game Development Work
 I volunteered to work on a GPS based mobile game project that required additional engineers. <br/>
 The game featured a procedural building generation system that dynamically created buildings from model parts. <br/>
-I added support to load regular pre-built 3d building models, and also added a UI switch to the game to toggle between the display of procedural and pre-built models. <br/>
+I added support to load regular pre-built static 3d building models, and also added a UI switch to the game to toggle between the display of procedural and pre-built models. <br/>
