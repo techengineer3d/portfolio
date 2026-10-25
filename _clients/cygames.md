@@ -38,7 +38,7 @@ I also implemented integration support for Perforce and Autodesk Shotgrid, allow
 ### Critical Fixes For Remote Work
 
 Near the end of 2019, all staff were informed the company would be shifting to remote work from home due to the global pandemic outbreak of COVID-19. Artists went home first, with engineers scheduled to leave a week or two later.
-Reports came in that the artists working on the AAA Project Awakening title could not connect their Maya tools over their home networks to the on-premise Perforce server, bringing production to a halt. After intense debugging and info research, I discovered that the main issue was with Perforce secure socket layer binary file. To resolve the issue, I built a new Maya compatible secure socket layer Perforce binary, which restored network Perforce access to the artists working remotely from home, and allowed the artists to resume work on the game's art production.
+Reports came in that the artists working on the AAA Project Awakening title could not connect their Maya tools over their home networks to the company's on-premise Perforce server, bringing production to a halt. After intense debugging and info research, I discovered that the main issue was with Perforce secure socket layer binary file. To resolve the issue, I built a new Maya compatible secure socket layer Perforce binary, which restored network Perforce access to the artists working remotely from home, and allowed the artists to resume work on the game's art production.
 
 ### Customization of Open Source Maya Tool "Studio Library"
 
@@ -49,8 +49,7 @@ I created an importer and converter tool to change all the existing old poses to
 This let the artists seamlessly change over to Studio Library and continue their work without interruption. <br/>
 For file versioning support, I added [Perforce](https://www.perforce.com/) integration to Studio Library to allow the artists to update, checkout and submit their poses to the Perforce repo directly from Maya. <br/>
 Perforce icons were added to all pose thumbnail previews to let artists know the current status of the files. <br/>
-Poses in Studio Library are always created at the origin (0,0,0). But sometimes artists need to apply poses to characters in other locations.  <br/>
-Support was added to make it possible to apply Studio Library poses to characters at world locations other than the origin. <br/>
+Poses in Studio Library are always created at the origin (0,0,0). I added support to make it possible to apply Studio Library poses to characters at world locations other than the origin. <br/>
 
 ### Customization of Open Source Maya Tool "Pyblish"
 
